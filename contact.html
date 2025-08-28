@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Dr. Dhruva Patel to book your periodontal consultation. Find our location, hours, and appointment booking form.">
+    <title>Contact Dr. Dhruva Patel | Book Appointment | Periodontal Consultation</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="logo">Dr. Dhruva Patel</a>
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+                <li><a href="./services.html" class="nav-link">Services</a></li>
+                <li><a href="./gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="./testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="./contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="./blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 8rem; background: var(--light-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h1>Contact Us</h1>
+                <p>Book your appointment or get in touch with our team</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Our Clinic</h3>
+                    <p>123 Medical Center<br>
+                    Healthcare District<br>
+                    City 400001</p>
+                    <a href="https://goo.gl/maps" target="_blank" style="color: var(--primary-blue); text-decoration: none; font-weight: 500;">Get Directions</a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p><strong>Main:</strong> +91 9408634010<br>
+                    <strong>Emergency:</strong> +91 98765 43211<br>
+                    Available 24/7 for emergencies</p>
+                    <a href="tel:+919876543210" style="color: var(--primary-blue); text-decoration: none; font-weight: 500;">Call Now</a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p><strong>General:</strong> info@drdhruva.com<br>
+                    <strong>Appointments:</strong> appointments@drdhruva.com<br>
+                    We respond within 24 hours</p>
+                    <a href="mailto:info@drdhruva.com" style="color: var(--primary-blue); text-decoration: none; font-weight: 500;">Send Email</a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p><strong>Mon - Fri:</strong> 9:00 AM - 8:00 PM<br>
+                    <strong>Saturday:</strong> 9:00 AM - 6:00 PM<br>
+                    <strong>Sunday:</strong> Emergency Only</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Form -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book Your Appointment</h2>
+                <p>Schedule a consultation with Dr. Dhruva Patel</p>
+            </div>
+            
+            <div class="contact-form">
+                <form id="appointment-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="appointment-date">Preferred Date *</label>
+                            <input type="date" id="appointment-date" name="appointmentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-time">Preferred Time *</label>
+                            <select id="appointment-time" name="appointmentTime" required>
+                                <option value="">Select Time</option>
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                                <option value="7:00 PM">7:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="treatment-interest">Treatment of Interest</label>
+                        <select id="treatment-interest" name="treatmentInterest">
+                            <option value="">Select Treatment</option>
+                            <option value="consultation">General Consultation</option>
+                            <option value="periodontal">Periodontal Treatment</option>
+                            <option value="implants">Dental Implants</option>
+                            <option value="laser">Laser Gum Surgery</option>
+                            <option value="smile">Smile Designing</option>
+                            <option value="preventive">Preventive Care</option>
+                            <option value="emergency">Emergency Care</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="1" max="120">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="medical-history">Medical History / Current Medications</label>
+                        <textarea id="medical-history" name="medicalHistory" placeholder="Please list any medical conditions, allergies, or current medications..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="chief-complaint">Chief Complaint / Reason for Visit</label>
+                        <textarea id="chief-complaint" name="chiefComplaint" placeholder="Please describe your main concern or reason for seeking treatment..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="additional-notes">Additional Notes</label>
+                        <textarea id="additional-notes" name="additionalNotes" placeholder="Any additional information you'd like to share..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" id="privacy-consent" name="privacyConsent" required>
+                            I consent to the collection and use of my personal information for appointment scheduling and treatment purposes.
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" id="marketing-consent" name="marketingConsent">
+                            I would like to receive updates about dental health tips and promotional offers.
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">
+                        <i class="fas fa-calendar-check" style="margin-right: 0.5rem;"></i>
+                        Book Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps -->
+    <section class="section" style="padding: 0;">
+        <div class="container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9374392921303!2d72.8310154!3d19.0759899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cedf1d068d41%3A0x18c0e59c41c5f41d!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Quick Contact Options</h2>
+                <p>Multiple ways to reach us for your convenience</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="service-title">WhatsApp</h3>
+                    <p class="service-description">
+                        Send us a message on WhatsApp for quick responses and appointment scheduling.
+                    </p>
+                    <a href="#" class="contact-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat with Us
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="service-title">Video Consultation</h3>
+                    <p class="service-description">
+                        Schedule a virtual consultation for initial assessment and treatment planning.
+                    </p>
+                    <a href="#" class="contact-btn">
+                        <i class="fas fa-video"></i>
+                        Book Video Call
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3 class="service-title">Emergency Care</h3>
+                    <p class="service-description">
+                        24/7 emergency dental care for urgent periodontal and implant issues.
+                    </p>
+                    <a href="tel:+919876543211" class="contact-btn emergency">
+                        <i class="fas fa-phone"></i>
+                        Emergency<br>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="service-title">Online Scheduling</h3>
+                    <p class="service-description">
+                        Use our online booking system to schedule appointments at your convenience.
+                    </p>
+                    <a href="#appointment-form" class="contact-btn">
+                        <i class="fas fa-calendar-alt"></i>
+                        Schedule Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Information -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our Clinic</h2>
+                <p>State-of-the-art facility designed for your comfort</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 3rem;">
+                <div>
+                    <h3 style="margin-bottom: 1.5rem; color: var(--primary-blue);">Modern Facility & Technology</h3>
+                    <ul style="margin-bottom: 2rem; color: var(--medium-gray);">
+                        <li style="margin-bottom: 1rem;">✓ Latest laser therapy equipment</li>
+                        <li style="margin-bottom: 1rem;">✓ Digital X-ray and 3D imaging</li>
+                        <li style="margin-bottom: 1rem;">✓ Sterilization and infection control</li>
+                        <li style="margin-bottom: 1rem;">✓ Comfortable patient rooms</li>
+                        <li style="margin-bottom: 1rem;">✓ Wheelchair accessible</li>
+                        <li style="margin-bottom: 1rem;">✓ Free parking available</li>
+                    </ul>
+                    <h3 style="margin-bottom: 1.5rem; color: var(--primary-blue);">What to Expect</h3>
+                    <p style="margin-bottom: 1rem; line-height: 1.6;">
+                        Your first visit includes a comprehensive examination, digital X-rays if needed, and a detailed discussion of your treatment options. We take time to ensure you're comfortable and fully informed about your oral health.
+                    </p>
+                    <p style="line-height: 1.6;">
+                        Our team is committed to providing a relaxing, professional environment where you can feel confident about your periodontal care.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Dr. Dhruva Patel - Female Periodontist at Modern Dental Clinic" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow-large);" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance & Payment -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Insurance & Payment Options</h2>
+                <p>Flexible payment plans to make quality care accessible</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Insurance Accepted</h3>
+                    <p class="service-description">
+                        We accept most major dental insurance plans. Our team will help verify your benefits and maximize your coverage.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="service-title">Payment Methods</h3>
+                    <p class="service-description">
+                        Cash, credit cards, debit cards, UPI payments, and bank transfers accepted. Digital payment options available.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="service-title">Flexible Plans</h3>
+                    <p class="service-description">
+                        Interest-free payment plans available for extensive treatments. Discuss options during your consultation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about appointments and visits</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto; margin-top: 3rem;">
+                <div class="service-card" style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-blue);">How do I prepare for my first appointment?</h3>
+                    <p>Bring a list of current medications, previous dental X-rays (if available), insurance information, and a list of questions or concerns you'd like to discuss.</p>
+                </div>
+                
+                <div class="service-card" style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-blue);">What should I expect during the consultation?</h3>
+                    <p>A comprehensive examination, discussion of your dental history, treatment planning, and detailed explanation of recommended procedures with cost estimates.</p>
+                </div>
+                
+                <div class="service-card" style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-blue);">Do you provide emergency care?</h3>
+                    <p>Yes, we provide 24/7 emergency care for periodontal and implant-related urgent issues. Call our emergency line for immediate assistance.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-blue);">How far in advance should I book appointments?</h3>
+                    <p>For regular check-ups, 2-4 weeks is typically sufficient. For complex procedures, we may need 4-6 weeks. Emergency appointments are accommodated same-day when possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr. Dhruva Patel</h3>
+                    <p>MDS in Periodontology</p>
+                    <p>Specialist in Gum Care, Dental Implants, and Oral Health</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center, Healthcare District, City 400001</p>
+                    <p><i class="fas fa-phone"></i> +91 9408634010</p>
+                    <p><i class="fas fa-envelope"></i> info@drdhruva.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 8:00 PM</p>
+                    <p><i class="fas fa-emergency"></i> 24/7 Emergency Care Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Dhruva Patel. All rights reserved. | Designed with care for better oral health.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+    <script>
+        // Set minimum date to today for appointment booking
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateInput = document.getElementById('appointment-date');
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+            
+            // Set maximum date to 3 months from today
+            const maxDate = new Date();
+            maxDate.setMonth(maxDate.getMonth() + 3);
+            dateInput.setAttribute('max', maxDate.toISOString().split('T')[0]);
+        });
+
+        // Smooth scroll to appointment form
+        document.querySelectorAll('a[href="#appointment-form"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const form = document.getElementById('appointment-form');
+                if (form) {
+                    form.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

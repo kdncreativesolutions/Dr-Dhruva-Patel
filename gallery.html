@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View before and after photos of Dr. Dhruva Patel's periodontal treatments, dental implants, and smile designing work.">
+    <title>Gallery - Dr. Dhruva Patel | Before & After Treatment Results</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="logo">Dr. Dhruva Patel</a>
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+                <li><a href="./services.html" class="nav-link">Services</a></li>
+                <li><a href="./gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="./testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                <li><a href="./blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 8rem; background: var(--light-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h1>Treatment Gallery</h1>
+                <p>Before and after photos showcasing our successful treatments</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div id="gallery-filters" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <button class="btn filter-btn active" data-filter="all">All Treatments</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="periodontal">Gum Treatment</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="implants">Dental Implants</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="smile">Smile Designing</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="laser">Laser Surgery</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Periodontal Treatment Cases -->
+                <div class="gallery-item" data-category="periodontal">
+                    <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Gum Treatment Before After" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Gum Treatment</h3>
+                            <p>Advanced periodontal therapy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="periodontal">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Periodontal Surgery Result" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Periodontal Surgery</h3>
+                            <p>Pocket reduction procedure</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="periodontal">
+                    <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Gum Regeneration" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Gum Regeneration</h3>
+                            <p>Tissue regeneration therapy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Implant Cases -->
+                <div class="gallery-item" data-category="implants">
+                    <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Single Tooth Implant" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Single Tooth Implant</h3>
+                            <p>Immediate implant placement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="implants">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Multiple Implants" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Multiple Implants</h3>
+                            <p>Full arch restoration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="implants">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Female Periodontist - All-on-4 Implants" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>All-on-4 Implants</h3>
+                            <p>Full mouth rehabilitation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smile Designing Cases -->
+                <div class="gallery-item" data-category="smile">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Smile Makeover" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Smile Makeover</h3>
+                            <p>Complete smile transformation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="smile">
+                    <img src="https://images.unsplash.com/photo-1606811841689-23dfda504a30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Gum Contouring" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Gum Contouring</h3>
+                            <p>Aesthetic gum reshaping</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="smile">
+                    <img src="https://images.unsplash.com/photo-1594824019330-88cf3d6b0e18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Crown Lengthening" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Crown Lengthening</h3>
+                            <p>Cosmetic crown lengthening</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laser Surgery Cases -->
+                <div class="gallery-item" data-category="laser">
+                    <img src="https://images.unsplash.com/photo-1485628390555-1a7bd503f9fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Laser Gum Surgery" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Laser Gum Surgery</h3>
+                            <p>Minimally invasive treatment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="laser">
+                    <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Laser Therapy" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Laser Therapy</h3>
+                            <p>Advanced laser treatment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="laser">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Laser Pocket Therapy" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Laser Pocket Therapy</h3>
+                            <p>Non-surgical gum treatment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Cases -->
+                <div class="gallery-item" data-category="periodontal">
+                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Gum Disease Treatment" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Gum Disease Treatment</h3>
+                            <p>Comprehensive periodontal care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="implants">
+                    <img src="https://images.unsplash.com/photo-1606811841689-23dfda504a30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Implant Supported Bridge" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Implant Bridge</h3>
+                            <p>Multiple tooth replacement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="smile">
+                    <img src="https://images.unsplash.com/photo-1485628390555-1a7bd503f9fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Digital Smile Design" />
+                    <div class="gallery-overlay">
+                        <div style="text-align: center;">
+                            <h3>Digital Smile Design</h3>
+                            <p>Predictable smile makeover</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Results Stats -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Treatment Success Statistics</h2>
+                <p>Real results from our comprehensive treatments</p>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Implant Success Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">% Patient Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Successful Implants</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Smile Transformations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before and After Comparison -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Before & After Transformations</h2>
+                <p>Witness the remarkable transformations achieved through our treatments</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr; gap: 4rem; margin-top: 3rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                <!-- Severe Gum Disease Treatment -->
+                <div class="service-card" style="padding: 3rem;">
+                    <div style="text-align: center; margin-bottom: 3rem;">
+                        <h3 style="color: var(--primary-blue); font-size: 1.8rem; margin-bottom: 1rem;">Severe Gum Disease Treatment</h3>
+                        <p style="color: var(--medium-gray); font-size: 1.1rem;">Complete periodontal regeneration using advanced laser therapy</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <div style="position: relative; display: inline-block;">
+                                <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Before Treatment" style="width: 100%; max-width: 300px; border-radius: 15px; box-shadow: var(--shadow-medium);" />
+                                <div style="position: absolute; top: 10px; left: 10px; background: rgba(255, 0, 0, 0.8); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">BEFORE</div>
+                            </div>
+                            <p style="margin-top: 1rem; font-weight: 600; color: var(--medium-gray);">Severe periodontal disease</p>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <div style="position: relative; display: inline-block;">
+                                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="After Treatment" style="width: 100%; max-width: 300px; border-radius: 15px; box-shadow: var(--shadow-medium);" />
+                                <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">AFTER</div>
+                            </div>
+                            <p style="margin-top: 1rem; font-weight: 600; color: var(--primary-blue);">Complete gum health restored</p>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 2rem; background: var(--light-gray); border-radius: 15px;">
+                        <p style="color: var(--medium-gray); line-height: 1.8; font-size: 1.1rem; margin-bottom: 1rem;">
+                            Patient achieved complete gum health in 6 months through advanced laser therapy and tissue regeneration techniques.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--primary-blue);">6</div>
+                                <div style="font-size: 0.9rem; color: var(--medium-gray);">Months</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--primary-blue);">100%</div>
+                                <div style="font-size: 0.9rem; color: var(--medium-gray);">Success Rate</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--primary-blue);">0</div>
+                                <div style="font-size: 0.9rem; color: var(--medium-gray);">Pain Level</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full Mouth Implants -->
+                <div class="service-card" style="padding: 3rem;">
+                    <div style="text-align: center; margin-bottom: 3rem;">
+                        <h3 style="color: var(--primary-blue); font-size: 1.8rem; margin-bottom: 1rem;">Full Mouth Implant Restoration</h3>
+                        <p style="color: var(--medium-gray); font-size: 1.1rem;">Complete mouth rehabilitation with All-on-6 implant system</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 2rem;">
+                        <div style="text-align: center;">
+                            <div style="position: relative; display: inline-block;">
+                                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Before Implants" style="width: 100%; max-width: 300px; border-radius: 15px; box-shadow: var(--shadow-medium);" />
+                                <div style="position: absolute; top: 10px; left: 10px; background: rgba(255, 0, 0, 0.8); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">BEFORE</div>
+                            </div>
+                            <p style="margin-top: 1rem; font-weight: 600; color: var(--medium-gray);">Missing multiple teeth</p>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <div style="position: relative; display: inline-block;">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="After Implants" style="width: 100%; max-width: 300px; border-radius: 15px; box-shadow: var(--shadow-medium);" />
+                                <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">AFTER</div>
+                            </div>
+                            <p style="margin-top: 1rem; font-weight: 600; color: var(--primary-blue);">Natural-looking smile</p>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 2rem; background: var(--light-gray); border-radius: 15px;">
+                        <p style="color: var(--medium-gray); line-height: 1.8; font-size: 1.1rem; margin-bottom: 1rem;">
+                            Patient regained full function and confidence with a beautiful, natural-looking smile through our advanced implant technology.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--primary-blue);">1</div>
+                                <div style="font-size: 0.9rem; color: var(--medium-gray);">Day Surgery</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--primary-blue);">6</div>
+                                <div style="font-size: 0.9rem; color: var(--medium-gray);">Implants</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 700; color: var(--primary-blue);">Life</div>
+                                <div style="font-size: 0.9rem; color: var(--medium-gray);">Changing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action for Transformations -->
+            <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: linear-gradient(135deg, var(--primary-blue), var(--accent-color)); border-radius: 20px; color: white;">
+                <h3 style="color: white; font-size: 1.8rem; margin-bottom: 1rem;">Ready for Your Own Transformation?</h3>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">Join hundreds of satisfied patients who have transformed their smiles and lives</p>
+                <a href="./contact.html" class="btn" style="background: white; color: var(--primary-blue); padding: 1rem 2rem; font-weight: 600;">Schedule Your Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: var(--primary-blue); color: var(--white);">
+        <div class="container" style="text-align: center;">
+            <h2 style="color: var(--white); margin-bottom: 1rem;">Ready for Your Transformation?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9);">
+                Schedule a consultation to discuss how we can transform your smile and improve your oral health.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="./contact.html" class="btn" style="background: var(--white); color: var(--primary-blue);">
+                    Book Your Consultation
+                </a>
+                <a href="./services.html" class="btn btn-secondary" style="border-color: var(--white); color: var(--white);">
+                    Learn About Treatments
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr. Dhruva Patel</h3>
+                    <p>MDS in Periodontology</p>
+                    <p>Specialist in Gum Care, Dental Implants, and Oral Health</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center, Healthcare District, City 400001</p>
+                    <p><i class="fas fa-phone"></i> +91 9408634010</p>
+                    <p><i class="fas fa-envelope"></i> info@drdhruva.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 8:00 PM</p>
+                    <p><i class="fas fa-emergency"></i> 24/7 Emergency Care Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Dhruva Patel. All rights reserved. | Designed with care for better oral health.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+    <script>
+        // Gallery filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active');
+                        b.classList.remove('btn');
+                        b.classList.add('btn', 'btn-secondary');
+                    });
+                    this.classList.add('active');
+                    this.classList.remove('btn-secondary');
+                    this.classList.add('btn');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.classList.add('fade-in');
+                            }, 100);
+                        } else {
+                            item.classList.remove('fade-in');
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
